@@ -1,0 +1,32 @@
+{
+  "title": "Right Option to Launch MoveCursorToCenterOfActiveWindow",
+  "rules": [
+    {
+      "description": "When right option key is pressed alone, launch /Applications/MoveCursorToCenterOfActiveWindow.app in background",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "right_option",
+            "modifiers": {
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "right_option",
+              "lazy": true
+            }
+          ],
+          "to_if_alone": [
+            {
+              "shell_command": "open -g '/Applications/MoveCursorToCenterOfActiveWindow.app'"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
