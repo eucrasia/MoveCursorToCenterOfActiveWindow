@@ -1,5 +1,5 @@
 # MoveCursorToCenterOfActiveWindow
-Move the mouse cursor to the center of the active screen on macOS.
+Move the mouse cursor to the center of the active window on macOS.
 
 ## Usage
 1. Place the app somewhere on the system. (Suppose you have placed in `/Applications`)
