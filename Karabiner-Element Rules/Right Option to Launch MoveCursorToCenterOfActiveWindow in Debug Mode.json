@@ -1,8 +1,8 @@
 {
-  "title": "Right Option to Launch MoveCursorToCenterOfActiveWindow",
+  "title": "Right Option to Launch MoveCursorToCenterOfActiveWindow in Debug Mode",
   "rules": [
     {
-      "description": "When the right option key is pressed alone, launch /Applications/MoveCursorToCenterOfActiveWindow.app in the background",
+      "description": "When the right option key is pressed alone, launch /Applications/MoveCursorToCenterOfActiveWindow.app (debug mode) in the background",
       "manipulators": [
         {
           "type": "basic",
@@ -22,7 +22,7 @@
           ],
           "to_if_alone": [
             {
-              "shell_command": "open -g '/Applications/MoveCursorToCenterOfActiveWindow.app'"
+              "shell_command": "open -g '/Applications/MoveCursorToCenterOfActiveWindow.app' --args --debug"
             }
           ]
         }
